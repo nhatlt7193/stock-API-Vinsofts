@@ -33,7 +33,7 @@ real_data=1
 Amount_fail=0
 Amount_true=0
 import tensorflow as tf
-regressor = tf.keras.models.load_model('my_model_1601456415.0336444_200')
+regressor = tf.keras.models.load_model('app/my_model_1601456415.0336444_200')
 def scraping_data():
     global Prediction_price, Prediction_status, Amount_true, Amount_fail
     global Oprice_list, len_recurent, y_real_ending, count_stopping, real_data, X_test, y_real
