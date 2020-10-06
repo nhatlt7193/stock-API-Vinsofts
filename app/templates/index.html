@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stock - vinsofts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="50">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD">
+            <div style="border:2px solid #e1e5ea;border-radius: 10px;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;min-width:285px;">    <div>
+                <div style="float:right;width:67%;border: none;text-align:left;padding:5px 0px;line-height:30px;">            <span style="font-size: 18px;"><a href="https://coinmarketcap.com/currencies/bitcoin/?utm_medium=widget&amp;utm_campaign=cmcwidget&amp;utm_source=0.0.0.0&amp;utm_content=bitcoin" target="_blank" style="text-decoration: none; color: rgb(16, 112, 224);">Bitcoin (BTC)</a></span> 
+                    <br>            
+                    <span style="font-size: 16px;">{{CURENT_PRICE}} USD <span style="color:#d94040"></span>
+                </span>                    </div>        <div style="text-align:center;padding:5px 0px;width:33%;"><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"></div>    </div><div style="border-top: 1px solid #e1e5ea;clear:both;">                    <div style="text-align:center;float:left;width:33%;font-size:12px;padding:12px 0;border-right:1px solid #e1e5ea;line-height:1.25em;">                        RANK                        <br><br>                        <span style="font-size: 17px; ">1</span>                    </div>                    
+                <div style="text-align:center;float:left;width:33%;font-size:12px;padding:12px 0 16px 0;border-right:1px solid #e1e5ea;line-height:1.25em;">                        MARKET CAP                        <br><br>                        <span style="font-size: 14px; ">$$$$ B <span style="font-size:9px">USD</span></span>                    </div>                    <div style="text-align:center;float:left;width:33%;font-size:12px;padding:12px 0 16px 0;line-height:1.25em;">                        VOLUME                        <br><br>                        <span style="font-size: 14px; ">$$$ B <span style="font-size:9px">USD</span></span>                    </div></div>    <div style="border-top: 1px solid #e1e5ea;text-align:center;clear:both;font-size:10px;font-style:italic;padding:5px 0;">        
+                    <a href="https://coinmarketcap.com?utm_medium=widget&amp;utm_campaign=cmcwidget&amp;utm_source=0.0.0.0&amp;utm_content=bitcoin" target="_blank" style="text-decoration: none; color: rgb(16, 112, 224);">Powered by CoinMarketCap</a>    
+                </div>
+            </div>
+        </div>
+        <h2>Prediction status next minute</h2>{{Prediction_status}}
+        <br>
+        <svg width="400" height="110">
+            <rect width="300" height="100" style="fill:{{name}};stroke-width:3;stroke:white" />
+        </svg>
+        <hr>
+        <br>
+        <h3>Corrected amount: {{Amount_true}}</h3>
+        <h3>Incorrected amount: {{Amount_fail}}</h3>
+        <hr>
+    </body>
+</html>
